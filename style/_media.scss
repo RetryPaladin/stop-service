@@ -159,16 +159,6 @@
     justify-content: center;
   }
 
-  .phone {
-    padding-top: 10px;
-  }
-
-  .detail {
-    top: -550px;
-    img {
-      width: 800px;
-    }
-  }
 
   .technology {
     padding-left: 0;
@@ -346,6 +336,13 @@
 }
 
 @media (max-width: 1200px) {
+
+.detail{
+  top: 450px;
+  img{
+    width: 800px;
+  }
+}
 
 .images__inner{
   grid-template-columns: repeat(3, 1fr)
@@ -610,12 +607,7 @@
     gap: 70px;
   }
 
-  .detail {
-    top: -550px;
-    img {
-      width: 800px;
-    }
-  }
+  
 
   .phone {
     padding-top: 50px;
