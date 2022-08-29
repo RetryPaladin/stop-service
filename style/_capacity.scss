@@ -1,0 +1,65 @@
+.capacity {
+  background-image: url(../images/capacity-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 163px;
+  background-position: 100% 100%;
+}
+
+.capacity-img{
+  position: absolute;
+  bottom: 25%;
+
+
+}
+
+.capacity__title {
+  padding: 77px 0 40px 0;
+  margin-left: 70px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #e42d12;
+}
+
+.capacity__text {
+  margin-left: 110px;
+  position: relative;
+  max-width: 447px;
+  &::before {
+    content: "";
+    background-image: url(../images/arrow-orange.svg);
+    width: 85px;
+    height: 68px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -94px;
+    top: -15px;
+  }
+}
+
+.capacity__content {
+  margin-top: 35px;
+  background: linear-gradient(97.72deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  backdrop-filter: blur(40px);
+  border-radius: 8px;
+  padding-bottom: 163px;
+}
+
+.cleaning__content--capacity {
+  margin-left: 137px;
+  justify-content: center;
+}
+
+.capacity__handing{
+  padding-left: 137px;
+  
+}
+
+.capacity__title--active{
+  padding-left: 77px;
+}
+
+
+

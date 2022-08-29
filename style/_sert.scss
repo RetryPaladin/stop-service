@@ -1,0 +1,80 @@
+.main-bg{
+  background-image: url(../images/sert-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  padding-top: 138px;
+  background-position: 100% 2%;
+}
+
+
+.detail-sert{
+  position: absolute;
+  top: 23%;
+  z-index: 0;
+}
+
+
+.certification__inner {  
+  padding: 0 0 153px 137px;
+}
+
+.certification__title {
+  max-width: 600px;
+  text-transform: uppercase;
+  padding-bottom: 26px;
+  color: #e42d12;
+}
+
+.certification__images {
+
+  background: linear-gradient(97.72deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  backdrop-filter: blur(40px);
+  border-radius: 8px;
+  max-width: 1169px;
+  padding: 69px 31px 30px 29px;
+
+}
+
+.images__inner{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  &.active{
+    display: none;
+  }
+}
+
+
+.certification-popup {
+  position: relative;
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+.certification__img:hover {
+  cursor: pointer;
+}
+
+.certification-popup__img{
+  max-width: 100%;
+}
+
+.popup-btn {
+  opacity: 0;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.popup-button{
+  width: 33%;
+  height: 100%;
+}

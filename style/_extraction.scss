@@ -1,0 +1,110 @@
+.extraction {
+  background: #b40000;
+  background-image: url(../images/extraction-shadow.png); 
+  background-repeat: no-repeat;
+  background-position: left;
+  color: #fff;
+  z-index: 0;
+}
+
+.extractions-img {
+  position: absolute;
+  right: 0;
+  top: 49%;
+ img {
+  height: 800px;
+ }
+}
+
+.extraction__inner {
+  padding-left: 137px;
+  padding-bottom: 83px;
+}
+
+.extraction__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extraction__item--one {
+  padding-left: 50px;
+}
+
+
+
+.extraction__item--active {
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.extraction__title {
+  padding-top: 94px;
+  max-width: 600px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.extraction__text {
+  max-width: 494px;
+  padding-top: 60px;
+  margin-left: 120px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -90px;
+    top: 45px;
+    width: 85px;
+    height: 62px;
+    background-image: url(../images/arrow-repair.svg);
+    background-repeat: no-repeat;
+  }
+}
+.extraction__parametrs {
+  padding-right: 57px;
+}
+
+.extraction__parametrs--avcive{
+  margin-right: 35px;
+}
+
+.extraction__parametrs-img {
+  height: 102px;
+}
+
+.extraction__parametrs-text {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.extraction-span {
+  padding-top: 20px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  span {
+    font-size: 30px;
+  }
+}
+
+.repair__parameters--extraction {
+  margin-top: 32px;
+}
+
+.extraction-bg {
+  position: absolute;
+
+  bottom: 51.5%;
+  right: 0;
+  z-index: 0;
+}
