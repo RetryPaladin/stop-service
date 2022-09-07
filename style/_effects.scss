@@ -14,8 +14,9 @@
 .effects__inner {
   display: flex;
   align-items: flex-end;
-  padding: 230px 0 0 137px;
+  padding: 230px 0 0 0;
   gap: 24px;
+  justify-content: space-between;
 }
 
 .effects__results {
@@ -57,9 +58,8 @@
   z-index: -1;
 }
 
-.elimination {
-  padding-left: 137px;
-}
+
+
 .elimination__title {
 
   line-height: 125%;
@@ -103,14 +103,9 @@
 .elimination__process {
   margin-top: 20px;
   z-index: 10;
-  
   background: linear-gradient(97.72deg, rgba(66, 86, 103, 0.14) 0%, rgba(32, 41, 50, 0.16) 100%);
   backdrop-filter: blur(40px);
   border-radius: 8px;
-
-  border: 1px solid;
-
-border-image-source: linear-gradient(308.44deg, #1D1D1B 20.96%, rgba(29, 29, 27, 0) 83.67%);
   
 }
 

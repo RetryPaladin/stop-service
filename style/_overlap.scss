@@ -1,6 +1,6 @@
 .overlap {
   background-image: url(../images/overlap-bg.png);
-  padding: 120px 0 159px 137px;
+  padding: 120px 0 159px 0;
   background-position: 25% 25%;
 
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@
 }
 
 .overlap__text {
-  width: 372px;
+  max-width: 372px;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;

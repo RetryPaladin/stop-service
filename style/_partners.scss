@@ -10,7 +10,6 @@
 }
 
 .partners__inner {
-  margin-left: 137px;
   background: linear-gradient(97.72deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
   backdrop-filter: blur(40px);
   border-radius: 8px;
@@ -27,6 +26,7 @@
   padding-left: 56px;
   padding-right: 43px;
   padding-bottom: 14px;
+  padding: 0 43px 14px 56px;
 }
 
 .partners__text {

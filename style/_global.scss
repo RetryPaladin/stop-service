@@ -39,17 +39,17 @@ body {
 }
 
 .container {
-  max-width: 1460px;
-  margin: auto;
+  max-width: 1220px;
   padding: 0 10px;
+  margin: auto;
 }
 
 .detail {
   display: flex;
   position: absolute;
-  top: 250px;
+  top: 20%;
   left: -35px;
-z-index: 1;
+  z-index: 1;
   object-fit: cover;
 }
 
@@ -104,12 +104,13 @@ transition: filter 0.3s ease-in;
 }
 
 .burger{
+  display: none;
   padding: 5px;
-   position: fixed;
-  z-index: 51;
+  position: fixed;
+  z-index: 50;
   right: 5%;
   top: 10%;
-background: linear-gradient(97.72deg, rgba(66, 86, 103, 0.14) 0%, rgba(32, 41, 50, 0.16) 100%);
+  background: linear-gradient(97.72deg, rgba(66, 86, 103, 0.14) 0%, rgba(32, 41, 50, 0.16) 100%);
   backdrop-filter: blur(40px);
   border-radius: 8px;
 }
@@ -119,8 +120,7 @@ background: linear-gradient(97.72deg, rgba(66, 86, 103, 0.14) 0%, rgba(32, 41, 5
   width: 30px;
   height: 5px;
   background-color: #ffffff;
-   border-radius: 5px;
-
+  border-radius: 5px;
 }
 
 .menu-icon::before {
@@ -169,4 +169,22 @@ background: linear-gradient(97.72deg, rgba(66, 86, 103, 0.14) 0%, rgba(32, 41, 5
   transform: rotate(-45deg);
   top: 0;
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.repair__img-phone{
+  display: none;
+}
+
+.stop-service__logo-phone{
+  display: none;
+  max-width: 123px;
+  padding: 42px 0 0 38px;
+}
+
+.phone-det{
+  display: none;
+  position: absolute;
+  bottom: -5%;
+  z-index: 0;
+  right: 0;
 }

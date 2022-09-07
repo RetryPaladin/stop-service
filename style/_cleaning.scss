@@ -1,4 +1,4 @@
-.cleaning{
+.cleaning {
   background-image: url(../images/cleaning-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 }
 
 .cleaning__inner {
-  padding: 146px 0 0 137px;
+  padding: 146px 0 0 0;
 }
 
 .cleaning__top {
@@ -23,16 +23,16 @@
   color: #e42d12;
   max-width: 624px;
   font-weight: 900;
-font-size: 36px;
-line-height: 125%;
-text-transform: uppercase;
+  font-size: 36px;
+  line-height: 125%;
+  text-transform: uppercase;
 }
 
 .cleaning__text {
   max-width: 464px;
   padding-left: 29px;
-   position: relative;
-  &::after{
+  position: relative;
+  &::after {
     content: "";
     background-image: url(../images/arrow-orange.svg);
     width: 82px;
@@ -50,8 +50,6 @@ text-transform: uppercase;
   backdrop-filter: blur(40px);
   border-radius: 8px;
   display: flex;
-  
-
 }
 
 .content__item-title {
@@ -63,7 +61,7 @@ text-transform: uppercase;
   padding: 37px 0 23px 0;
 }
 
-.content__item-text{
+.content__item-text {
   padding-left: 29px;
   line-height: 20px;
 }
@@ -77,7 +75,6 @@ text-transform: uppercase;
   text-align: center;
   text-transform: uppercase;
 
-  color: #1d1d1b;
 }
 
 .content__img {
@@ -91,15 +88,68 @@ text-transform: uppercase;
   max-width: 516px;
 }
 
-
 .content__list-text {
   line-height: 125%;
   padding-bottom: 30px;
   width: 470px;
-  color: #1d1d1b;
 }
 
 .cleaning__content--active {
   margin-top: 201px;
   padding-bottom: 116px;
+}
+
+.cross-img {
+  width: 100%;
+  position: relative;
+}
+
+.cross {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cleaning{
+  padding-bottom: 80px;
+}
+
+.cleaning__phone-content {
+  display: none;
+  margin-top: 20px;
+}
+
+.cleaning__phone-list {
+  padding: 29px 0 0 31px;
+  background: linear-gradient(97.72deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  backdrop-filter: blur(40px);
+  border-radius: 8px;
+  list-style: none;
+}
+
+.cleaning__phone-item {
+  position: relative;
+  max-width: 320px;
+  &::after {
+    content: "";
+    background-image: url(../images/arrow-orange.svg);
+    width: 26px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: -30px;
+    position: absolute;
+  }
+  padding-bottom: 27px;
+}
+.cleaning__phone-link {
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1d1d1b;
+}
+
+.phone__content{
+  display: none !important;
 }

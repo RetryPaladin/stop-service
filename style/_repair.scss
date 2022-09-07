@@ -14,7 +14,7 @@ z-index: -1;
 }
 
 .repair__inner {
-  padding: 126px 0 0 137px;
+  padding: 126px 0 0 0;
 }
 .repair__title {
 
@@ -59,7 +59,7 @@ line-height: 125%;
 .repair__parameters-title {
   text-align: center;
   text-transform: uppercase;
-  padding: 37px 0 13px 0;
+  padding: 37px 0 18px 0;
   font-weight: 900;
   font-size: 24px;
   line-height: 125%;
@@ -82,8 +82,6 @@ line-height: 125%;
 
 
 .handing{
-  padding: 0 0 165px 137px;
-  padding-left: 137px;
   padding-bottom: 165px;
   z-index: 10;
 }

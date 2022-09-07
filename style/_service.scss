@@ -15,7 +15,7 @@
 
 }
 .service__logo {
-  padding-top: 266px;
+  padding-top: 302px;
   width: 443px;
 }
 
@@ -54,4 +54,32 @@
   font-weight: 400;
   line-height: 125%;
   color: #1D1D1B;
+}
+
+.service__phone-text{
+  display: none;
+}
+
+.slider__title--active{
+  font-size: 52px;
+  display: flex;
+  padding: 53px 10px 15px 10px;
+  justify-content: flex-end;
+  span{
+    font-size: 96px;
+  }
+  p{
+    line-height: 72%;
+    text-align: right;
+  }
+}
+
+.phone__logo {
+  display: none;
+  padding: 39px;
+}
+
+.phone__logo-img {
+  max-width: 127px;
+  height: 40px;
 }

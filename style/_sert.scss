@@ -78,3 +78,37 @@
   width: 33%;
   height: 100%;
 }
+
+.phone-sert__inner {
+  display: none;
+  margin: 26px 0; 
+
+  &.active{
+    display: none;
+  }
+}
+
+.phone-sert__inner-item {
+
+  margin: 0 50px 26px 70px;
+  position: relative;
+  line-height: 125%;
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/arrow-orange.svg);
+    width: 23px;
+    top: 2px;
+    height: 18px;
+    left: -35px;
+    background-size: cover;
+  }
+}
+
+.certification-popup__img{
+padding-top: 30px;
+}
+
+.cross{
+  display: none;
+}

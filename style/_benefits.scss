@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0%;
-  padding: 103px 0 113px 137px;
+  padding: 103px 0 113px 0px;
   position: relative;
 
   background-color: #fff;
@@ -44,7 +44,7 @@
 }
 
 .benefits__text  {
-  width: 184px;
+  max-width: 184px;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;

@@ -9,13 +9,19 @@
 .capacity-img{
   position: absolute;
   bottom: 25%;
-
-
 }
+
+.cleaning__content-item.phone-vers{
+  background: linear-gradient(97.72deg, rgba(66, 86, 103, 0.14) 0%, rgba(32, 41, 50, 0.16) 100%);
+  backdrop-filter: blur(40px);
+  border-radius: 8px;
+  margin-top: 18px;
+}
+
 
 .capacity__title {
   padding: 77px 0 40px 0;
-  margin-left: 70px;
+  margin-left: 90px;
   font-weight: 900;
   font-size: 36px;
   line-height: 125%;
@@ -48,17 +54,12 @@
 }
 
 .cleaning__content--capacity {
-  margin-left: 137px;
   justify-content: center;
 }
 
-.capacity__handing{
-  padding-left: 137px;
-  
-}
-
-.capacity__title--active{
-  padding-left: 77px;
+.capacity__phone-bg{
+  display: none;
+  padding: 39px 21px 89px 21px;
 }
 
 

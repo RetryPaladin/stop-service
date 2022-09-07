@@ -30,11 +30,3 @@ scrollTop.addEventListener('click', () => {
 })
 
 
-//сертификаты
-const serImg = document.querySelectorAll('.certification__img');
-
-serImg.forEach(serImg => {
-  serImg.addEventListener('click', () =>{
-    alert('hi')
-  })
-});
