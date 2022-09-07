@@ -240,7 +240,7 @@ body {
 }
 
 .certification__inner {
-  padding: 0 0 153px 137px;
+  padding: 0 0 153px 0;
 }
 
 .certification__title {
@@ -525,7 +525,7 @@ body {
 
 .capacity__phone-bg {
   display: none;
-  padding: 39px 21px 89px 21px;
+  padding: 39px 0 89px 0;
 }
 
 .extraction {
@@ -2292,9 +2292,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .cleaning__content-item {
     display: -webkit-box;
@@ -2671,6 +2668,9 @@ body {
 }
 
 @media (max-width: 700px) {
+  .container {
+    padding: 0 20px;
+  }
   .extraction__item--active {
     gap: 40px;
   }

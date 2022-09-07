@@ -257,7 +257,6 @@
 
   .cleaning__content {
     flex-direction: column;
-    align-items: center;
   }
 
   .cleaning__content-item {
@@ -630,6 +629,10 @@
 }
 
 @media (max-width: 700px) {
+
+  .container{
+    padding: 0 20px;
+  }
 
   .extraction__item--active{
     gap: 40px;
