@@ -1968,10 +1968,6 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2430,7 +2426,7 @@ body {
   .detail {
     top: 0;
   }
-  .header__nav--active {
+  .header__nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2912,6 +2908,10 @@ body {
     transition: all 1s;
     -webkit-transform: translateY(-1500px);
             transform: translateY(-1500px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2943,49 +2943,6 @@ body {
     padding-left: 0;
   }
   .header__list-item .link {
-    padding-left: 0;
-  }
-  .header__nav--active {
-    z-index: 49;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-    -webkit-transform: translateY(-1500px);
-            transform: translateY(-1500px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 100vh;
-    background: #b40000;
-  }
-  .header__nav--active.active {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  .header__list--active {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 15px;
-    padding-left: 0;
-  }
-  .header__list--active-item .link {
     padding-left: 0;
   }
   .logo {
