@@ -42,12 +42,12 @@ body {
   max-width: 1220px;
   padding: 0 10px;
   margin: auto;
+  z-index: 2;
 }
 
 .detail {
-  display: flex;
   position: absolute;
-  top: 20%;
+  top: 150px;
   left: -35px;
   z-index: 1;
   object-fit: cover;

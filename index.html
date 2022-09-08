@@ -28,43 +28,55 @@
   </div>
 
 
-
-  <header class="header">
+  <header class="services-header">
     <nav class="header__nav">
-
+  
+      <a class="header-nav__logo" href="index.html">
+        <img src="./images/header-logo.svg" alt="">
+      </a>
+  
       <ul class="header__list">
-        <li class="header__list-item"><a class="link header__link" href="#">ГЛАВНАЯ </a> </li>
+        <li class="header__list-item"><a class="link header__link" href="index.html">ГЛАВНАЯ </a> </li>
         <li class="header__list-item"> <a class="link header__link" href="services.html">СЕРВИСЫ </a> </li>
         <li class="header__list-item"> <a class="link header__link" href="сertification.html">сертификаты </a> </li>
         <li class="header__list-item"> <a class="link header__link" href="#footer">КОНТАКТЫ </a> </li>
       </ul>
-
     </nav>
+  </header>
 
-    <div class="header__logo">
-      <img class="logo" src="./images/logo.svg" alt="">
+  <section class="header-sec">
+    
+    <div class="container">
+
+      <div class="header__inner">
+
+        <div class="header__logo">
+          <img class="logo" src="./images/logo.svg" alt="">
+        </div>
+        <div class="phone">
+          <a class="link" href="tel:+74957407428">+7 (495) 740-74-28</a>
+        </div>
+        
+        
+        <p class="header__text">
+          Компания ООО «СТОП-Сервис» специализируется на применении технологии «СТОП» для устранения аварийных протечек
+          среды на
+          действующем трубопроводном оборудовании без его отключения или снижения рабочих параметров.
+        </p>
+      </div>
     </div>
-    <div class="phone">
-      <a class="link" href="tel:+74957407428">+7 (495) 740-74-28</a>
-    </div>
-
-
-    <p class="header__text">
-      Компания ООО «СТОП-Сервис» специализируется на применении технологии «СТОП» для устранения аварийных протечек
-      среды на
-      действующем трубопроводном оборудовании без его отключения или снижения рабочих параметров.
-    </p>
-
 
     <div class="detail">
       <img class="detail__img" src="./images/detail.png" alt="">
     </div>
-  </header>
+
+  </section>
+
 
   <main class="main">
 
-
     <section class="service">
+
       <div class="container">
         <div class="service__content">
           <div class="service__logo">
@@ -120,10 +132,10 @@
         </div>
 
         <div class="slider">
-          <div class="slider__title">
+          <div class="slider__title slider-in">
             более 36 лет
           </div>
-          <p class="slider__text">
+          <p class="slider__text slider-in">
             успешного применения технологии устранения утечек <br> «СТОП» на промышленных предприятиях
           </p>
 
@@ -224,6 +236,7 @@
         </div>
 
       </div>
+
     </section>
 
 
@@ -699,12 +712,12 @@
     <section class="partners">
       <div class="container">
 
-          
+
         <div class="partners__inner">
-       
-<div class="partners__title title">
-  НАШИ ПАРТНЁРЫ
-</div>
+
+          <div class="partners__title title">
+            НАШИ ПАРТНЁРЫ
+          </div>
 
           <div class="partners__content">
             <div class="partners__item">
@@ -733,7 +746,7 @@
 
     </section>
 
-    
+
   </main>
 
   <footer class="footer" id="footer">
@@ -781,10 +794,11 @@
   </footer>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

@@ -7,26 +7,25 @@
   backdrop-filter: blur(20px);
   border-radius: 10px;
   cursor: pointer;
-  margin-left: 137px;
   position: relative;
 
 }
+
 
 .slider__title {
 
   font-weight: 900;
   font-size: 80px;
   line-height: 125%;
-
   color: #e42d12;
+
 }
 .slider__text {
   font-weight: 600;
   font-size: 20px;
   line-height: 125%;
   text-align: center;
-  color: #1d1d1b;
-   
+  color: #1d1d1b; 
 }
 
 .slick-dots{
@@ -35,7 +34,6 @@
   list-style: none;
   left: -35px;
   opacity: 0;
-   
 
   li{
     

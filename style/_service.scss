@@ -1,19 +1,18 @@
 .service{
+  position: relative;
   background-image: url(../images/service-bg.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
   padding-bottom: 87px;
-  z-index: 49;
 }
 
 .service__content {
-  
   display: flex;
-  padding-left: 137px;
   gap: 132px;
-
 }
+
+
 .service__logo {
   padding-top: 302px;
   width: 443px;
