@@ -1783,6 +1783,8 @@ body {
 
 .technology__text--bold {
   font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .technology__title {
@@ -2587,7 +2589,7 @@ body {
 }
 
 @media (max-width: 800px) {
-  .header {
+  .header-sec {
     background-image: url(../images/phone_head.jpg);
     background-position: 50% 0%;
   }
