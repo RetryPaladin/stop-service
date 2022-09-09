@@ -951,7 +951,7 @@ body {
 .overlap {
   background-image: url(../images/overlap-bg.png);
   padding: 120px 0 159px 0;
-  background-position: 25% 25%;
+  background-position: 25% 35%;
   background-repeat: no-repeat;
 }
 
@@ -976,14 +976,14 @@ body {
   line-height: 125%;
   text-transform: uppercase;
   color: #e42d12;
-  padding-right: 119px;
+  padding-right: 86px;
   position: relative;
 }
 
 .overlap__title::after {
   content: "";
   top: 15px;
-  right: 15px;
+  right: 0;
   position: absolute;
   width: 85px;
   height: 65px;
@@ -992,7 +992,7 @@ body {
 }
 
 .overlap__text {
-  max-width: 372px;
+  max-width: 352px;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;

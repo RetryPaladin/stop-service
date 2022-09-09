@@ -1,7 +1,7 @@
 .overlap {
   background-image: url(../images/overlap-bg.png);
   padding: 120px 0 159px 0;
-  background-position: 25% 25%;
+  background-position: 25% 35%;
   background-repeat: no-repeat;
 }
 
@@ -23,12 +23,12 @@
   line-height: 125%;
   text-transform: uppercase;
   color: #e42d12;
-  padding-right: 119px;
+  padding-right: 86px;
   position: relative;
   &::after {
     content: "";
     top: 15px;
-    right: 15px;
+    right: 0;
     position: absolute;
     width: 85px;
     height: 65px;
@@ -38,7 +38,8 @@
 }
 
 .overlap__text {
-  max-width: 372px;
+
+  max-width: 352px;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -49,7 +50,6 @@
   margin-top: 23px;
   display: flex;
   justify-content: center;
-
   background: linear-gradient(97.72deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
   backdrop-filter: blur(40px);
   border-radius: 8px;
