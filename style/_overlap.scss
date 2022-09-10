@@ -1,15 +1,25 @@
 .overlap {
   background-image: url(../images/overlap-bg.png);
   padding: 120px 0 159px 0;
-  background-position: 25% 35%;
+  background-position: 35% 10%;
   background-repeat: no-repeat;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/overlap-shadow.png);
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 244px;
+  }
 }
 
 .overlap-img{
   position: absolute;
- z-index: -1;
- top: 437px;
-
+  z-index: -1;
+  top: 437px;
 }
 
 .overlap__top {
@@ -38,7 +48,6 @@
 }
 
 .overlap__text {
-
   max-width: 352px;
   font-weight: 600;
   font-size: 16px;
