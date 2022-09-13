@@ -21,7 +21,7 @@
 }
 
 .certification__title {
-  max-width: 600px;
+
   text-transform: uppercase;
   padding-bottom: 26px;
   color: #e42d12;
@@ -109,6 +109,9 @@
 padding-top: 30px;
 }
 
-.cross{
-  display: none;
+.title-normal{
+  &.active{
+    display: none;
+  }
 }
+

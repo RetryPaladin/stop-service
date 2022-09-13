@@ -221,6 +221,11 @@ body {
   right: 0;
 }
 
+.cross,
+.cross-sert {
+  display: none;
+}
+
 .main-bg {
   background-image: url(../images/sert-bg.jpg);
   background-size: cover;
@@ -242,7 +247,6 @@ body {
 }
 
 .certification__title {
-  max-width: 600px;
   text-transform: uppercase;
   padding-bottom: 26px;
   color: #e42d12;
@@ -335,7 +339,7 @@ body {
   padding-top: 30px;
 }
 
-.cross {
+.title-normal.active {
   display: none;
 }
 
@@ -951,8 +955,20 @@ body {
 .overlap {
   background-image: url(../images/overlap-bg.png);
   padding: 120px 0 159px 0;
-  background-position: 25% 35%;
+  background-position: 35% 10%;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlap::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/overlap-shadow.png);
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 244px;
 }
 
 .overlap-img {
@@ -1066,7 +1082,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 83px 136px 94px 137px;
+  padding: 83px 0 94px 0;
 }
 
 .footer__contetn {
@@ -1280,7 +1296,6 @@ body {
 
 .elimination__process-item {
   position: relative;
-  margin-right: 41px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1325,14 +1340,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 20px;
-  padding-left: 55px;
+  gap: 24px;
   padding-bottom: 28px;
 }
 
@@ -2336,7 +2350,7 @@ body {
     padding: 0;
   }
   .footer__inner {
-    padding: 39px 30px;
+    padding: 39px 0;
   }
   .images__inner {
     -ms-grid-columns: (1fr)[3];
@@ -2735,7 +2749,8 @@ body {
   .extraction__item--active {
     gap: 40px;
   }
-  .cross {
+  .cross,
+  .cross-sert {
     display: block;
   }
   .popup-btn {
@@ -2927,7 +2942,11 @@ body {
     display: block;
   }
   .phone {
-    padding-right: 10px;
+    margin-left: 90px;
+    margin-top: -30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header__list {
     padding-right: 0;
@@ -3171,7 +3190,8 @@ body {
     height: 36px;
   }
   .header__text {
-    padding: 100px 20px 0 20px;
+    padding: 100px 0 0 0;
+    margin: 0 90px;
   }
   .extractions-img {
     top: 55.5%;
@@ -3243,6 +3263,20 @@ body {
 }
 
 @media (max-width: 500px) {
+  .cleaning__content-item {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .content__list-text {
+    max-width: 100%;
+  }
+  .flanges__inner .repair__parameters .repair__parameters-item {
+    background: linear-gradient(97.72deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  }
+  .overlap::after {
+    display: none;
+  }
   .phone-det {
     display: block;
   }
@@ -3264,6 +3298,12 @@ body {
   .milling {
     background-image: url(../images/milling_phone.png);
     background-position: 50%;
+    background-size: cover;
+  }
+  .repair__parameters {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
   }
   .repair__list {
     padding-right: 10px;
@@ -3340,7 +3380,7 @@ body {
     background-position: center;
   }
   .capacity__text {
-    margin-left: 69px;
+    margin-left: 40px;
   }
   .capacity__text::before {
     width: 26px;
@@ -3452,9 +3492,6 @@ body {
   .slider__dotshead-item {
     font-size: 14px;
   }
-  .phone {
-    padding-right: 60px;
-  }
   .link {
     font-size: 18px;
     padding-left: 10px;
@@ -3565,6 +3602,9 @@ body {
 }
 
 @media (max-width: 400px) {
+  .header__text {
+    margin: 0 50px;
+  }
   .rep-img img {
     max-width: 230px;
   }
@@ -3613,9 +3653,6 @@ body {
   }
   .elimination__process-item::before {
     display: none;
-  }
-  .footer__inner {
-    padding: 5px;
   }
   .milling__text::before {
     display: none;

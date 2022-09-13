@@ -327,7 +327,7 @@
   }
 
   .footer__inner {
-    padding: 39px 30px;
+    padding: 39px 0;
   }
 
 
@@ -724,8 +724,8 @@
     gap: 40px;
   }
 
-
-  .cross{
+  .cross,
+  .cross-sert{
     display: block;
   }
 
@@ -736,7 +736,6 @@
   .phone-sert__inner{
     display: block;
   }
-
 
   .main-bg{
     padding-top: 0;
@@ -753,8 +752,6 @@
   .main-bg {
     background-image: url(../images/phone_sert.png);
 }
-
-
 
   .flanges__title{
     text-align: center;
@@ -816,16 +813,15 @@
     }
   }
 
-    .title{
-      text-align: center;
-      font-size: 20px;
-    }
+  .title{
+    text-align: center;
+    font-size: 20px;
+  }
 
   .repair__text {
     max-width: 520px;
     font-size: 14px;
   }
-
 
   .elimination__title {
     text-align: center;
@@ -947,7 +943,9 @@
   }
 
   .phone {
-    padding-right: 10px;
+    margin-left: 90px;
+    margin-top: -30px;
+    justify-content: center;
   }
 
   .header__list {
@@ -976,8 +974,6 @@
   .overlap__title {
     padding-right: 0;
   }
-
-
 
   .logo {
     width: 500px;
@@ -1241,7 +1237,8 @@
   }
 
   .header__text {
-    padding: 100px 20px 0 20px;
+    padding: 100px 0 0 0;
+    margin: 0 90px;
   }
 
   .extractions-img {
@@ -1325,6 +1322,27 @@
 
 @media (max-width: 500px) {
 
+
+.cleaning__content-item {
+  align-items: normal; 
+}
+
+.content__list-text{
+  max-width: 100%;
+}
+
+  .flanges__inner{
+    .repair__parameters{
+      .repair__parameters-item{
+        background: linear-gradient(97.72deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+      }
+    }
+  }
+
+  .overlap::after {
+    display: none;
+}
+
   
   .phone-det{
     display: block;
@@ -1355,12 +1373,17 @@
   .milling{
     background-image: url(../images/milling_phone.png);
     background-position: 50%;
+    background-size: cover;
+  }
+
+  .repair__parameters{
+    align-items: normal;
   }
 
 
-      .repair__list{
-      padding-right: 10px;
-    }
+  .repair__list{
+    padding-right: 10px;
+  }
 
   
   .rep-img {
@@ -1444,7 +1467,7 @@
   }
 
   .capacity__text{
-    margin-left: 69px;
+    margin-left: 40px;
     &::before{
       width: 26px;
       height: 20px;
@@ -1571,10 +1594,6 @@
     font-size: 14px;
   }
 
-  .phone {
-    padding-right: 60px;
-  }
-
   .link {
     font-size: 18px;
     padding-left: 10px;
@@ -1638,7 +1657,6 @@
     font-size: 14px;
   }
 
-
   .service__text {
     font-size: 12px;
   }
@@ -1673,7 +1691,6 @@
       display: none;
     }
   }
-
 
   .extraction__title {
     width: 100%;
@@ -1726,6 +1743,11 @@
 }
 
 @media (max-width: 400px) {
+
+    .header__text {
+    
+    margin: 0 50px;
+  }
 
 
     .rep-img {
@@ -1795,11 +1817,6 @@
 .elimination__process-item::before {
     display: none;
 }
-
-.footer__inner{
-  padding: 5px;
-}
-
   .milling__text{
     &::before{
       display: none;
