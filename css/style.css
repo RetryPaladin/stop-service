@@ -1047,7 +1047,7 @@ body {
 .overlap__scheme-text {
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 125%;
   color: #1d1d1b;
   padding-left: 14px;
@@ -1322,9 +1322,7 @@ body {
 }
 
 .elimination__process-item:nth-last-child(-n+1)::after {
-  position: absolute;
-  content: "";
-  background-image: none;
+  display: none;
 }
 
 .elimination__process-text {
@@ -1780,6 +1778,7 @@ body {
 .technology__about {
   color: #ffffff;
   position: relative;
+  padding-left: 50px;
 }
 
 .technology__wow img {
@@ -1792,7 +1791,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
-  padding-left: 50px;
 }
 
 .technology__text--bold {
@@ -1806,11 +1804,11 @@ body {
   font-size: 64px;
   line-height: 78px;
   text-transform: lowercase;
-  padding-left: 39px;
+  margin-left: 40px;
 }
 
 .technology__text--regular {
-  max-width: 594px;
+  max-width: 634px;
   padding-top: 15px;
 }
 
@@ -2056,7 +2054,9 @@ body {
 
 .header__text {
   display: none;
-  padding: 170px 83px 0 82px;
+  padding-top: 170px;
+  max-width: 261px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1550px) {
@@ -2324,6 +2324,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .technology__images {
     gap: 24px;
@@ -2725,6 +2728,12 @@ body {
   }
 }
 
+@media (max-width: 750px) {
+  .elimination__process-item {
+    width: 400px;
+  }
+}
+
 @media (max-width: 710px) {
   .capacity__title {
     margin: 0;
@@ -2738,13 +2747,16 @@ body {
 }
 
 @media (max-width: 700px) {
+  .partners {
+    background-size: cover;
+  }
   .header__inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .container {
-    padding: 0 10px;
+    padding: 0 5px;
   }
   .extraction__item--active {
     gap: 40px;
@@ -2792,7 +2804,7 @@ body {
   .content__item-title {
     font-size: 20px;
     text-align: center;
-    color: #1D1D1B;
+    color: #1d1d1b;
   }
   .phone__content {
     -webkit-transform: translateX(-1000px);
@@ -2862,6 +2874,9 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 42px;
     gap: 18px;
   }
@@ -2893,7 +2908,7 @@ body {
     text-align: left;
   }
   .technology__img img {
-    width: 163px;
+    width: 145px;
   }
   .technology__application {
     -webkit-box-orient: vertical;
@@ -2939,7 +2954,9 @@ body {
     display: block;
   }
   .header__text {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .phone {
     margin-left: 90px;
@@ -3144,6 +3161,13 @@ body {
 }
 
 @media (max-width: 540px) {
+  .benefits__img {
+    margin-right: 32px;
+  }
+  .benefits__text {
+    text-transform: lowercase;
+    width: 204px;
+  }
   .handing__text {
     font-size: 14px;
     margin-left: 50px;
@@ -3174,12 +3198,14 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 18px;
+    padding: 0 0 0 30px;
   }
   .aplication__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 69px;
+    max-width: 300px;
   }
   .aplication__text-item {
     text-align: left;
@@ -3190,8 +3216,7 @@ body {
     height: 36px;
   }
   .header__text {
-    padding: 100px 0 0 0;
-    margin: 0 90px;
+    padding-top: 100px;
   }
   .extractions-img {
     top: 55.5%;
@@ -3263,6 +3288,11 @@ body {
 }
 
 @media (max-width: 500px) {
+  .technology__application-item {
+    max-width: 360px;
+    height: 100%;
+    margin-left: 15px;
+  }
   .cleaning__content-item {
     -webkit-box-align: normal;
         -ms-flex-align: normal;
@@ -3352,11 +3382,11 @@ body {
     padding-bottom: 121px;
   }
   .flanges__title {
-    color: #E42D12;
+    color: #e42d12;
   }
   .flanges {
     background-image: url(../images/flanges_phone.png);
-    color: #1D1D1B;
+    color: #1d1d1b;
   }
   .capacity__title--active {
     color: #fff;
@@ -3437,13 +3467,15 @@ body {
     width: 60px;
     height: 60px;
   }
-  .extraction__parametrs-text, .extraction-span {
+  .extraction__parametrs-text,
+  .extraction-span {
     padding: 0;
     font-size: 14px;
     line-height: 100%;
     font-weight: 500;
   }
-  .extraction__parametrs-text span, .extraction-span span {
+  .extraction__parametrs-text span,
+  .extraction-span span {
     font-size: 14px;
   }
   .extraction__parametrs {
@@ -3480,6 +3512,8 @@ body {
   }
   .technology__text {
     font-size: 14px;
+    padding-left: 0;
+    margin: 0 auto;
   }
   .technology__title {
     margin-top: 20px;
@@ -3511,6 +3545,9 @@ body {
 }
 
 @media (max-width: 450px) {
+  .technology__about {
+    padding: 0 40px;
+  }
   .cleaning__phone-content {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -3519,24 +3556,12 @@ body {
   .service {
     background-position: 20% 0%;
   }
-  .technology__application-item {
-    max-width: 360px;
-    height: 100%;
-    margin-left: 15px;
-  }
-  .technology__inner {
-    margin-left: 18px;
-  }
   .technology__wow img {
     height: 180px;
     width: 35px;
   }
   .technology__title {
     padding-left: 10px;
-  }
-  .technology__text {
-    padding-left: 10px;
-    font-size: 14px;
   }
   .service__text {
     font-size: 12px;
@@ -3602,8 +3627,15 @@ body {
 }
 
 @media (max-width: 400px) {
-  .header__text {
-    margin: 0 50px;
+  .benefits__content {
+    padding: 29px 0 0 0;
+    margin-left: 30px;
+  }
+  .aplication__img-item img {
+    width: 36px;
+  }
+  .aplication__scheme {
+    padding: 0;
   }
   .rep-img img {
     max-width: 230px;
@@ -3626,9 +3658,6 @@ body {
   .effects__list {
     padding: 55px 0px 60px 0;
   }
-  .effects__text {
-    max-width: 300px;
-  }
   .technology__list {
     max-width: 300px;
   }
@@ -3638,12 +3667,21 @@ body {
   .technology__application-item {
     margin-left: 0;
   }
-  .overlap__img {
-    display: none;
+  .overlap__img img {
+    width: 316px;
   }
 }
 
 @media (max-width: 360px) {
+  .technology__about {
+    padding: 30px;
+  }
+  .technology__images {
+    gap: 18px;
+  }
+  .technology__img img {
+    width: 120px;
+  }
   .partners__inner {
     min-width: 314px;
     margin: 0;
@@ -3656,15 +3694,6 @@ body {
   }
   .milling__text::before {
     display: none;
-  }
-  .handing__inner {
-    padding: 10px;
-  }
-  .repair__parameters {
-    padding: 10px;
-  }
-  .repair__inner {
-    padding: 10px;
   }
   .aplication__text-item {
     width: 100%;
@@ -3680,15 +3709,33 @@ body {
     padding: 0;
     list-style: none;
   }
-  .repair__inner {
-    padding: 5px;
-  }
   .repair__list {
     list-style: none;
     padding: 0;
   }
   .repair__list-item {
     padding: 5px;
+  }
+  .repair__text::before {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .elimination {
+    padding: 0;
+  }
+  .elimination__inner {
+    border-radius: 0;
+  }
+  .elimination__text {
+    border-radius: 0;
+  }
+  .technology__application-item {
+    max-width: 100%;
+  }
+  .technology__application-title {
+    font-size: 14px;
   }
 }
 

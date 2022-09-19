@@ -133,10 +133,7 @@
 
 .elimination__process-item:nth-last-child(-n+1){
   &::after{
-    position: absolute;
-    content:"";
-   
-    background-image: none;
+   display: none;
    
   }
 }
