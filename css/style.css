@@ -75,9 +75,6 @@ body {
   z-index: 20;
   position: fixed;
   background: linear-gradient(97.72deg, rgba(66, 86, 103, 0.14) 0%, rgba(32, 41, 50, 0.16) 100%);
-  border: 1px solid #000;
-  border-top: none;
-  border-left: none;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
   border-radius: 8px;
@@ -3083,6 +3080,7 @@ body {
   .content__item-text {
     font-size: 14px;
     width: 303px;
+    margin: auto;
     padding-left: 0;
   }
   .repair__parameters-title {
@@ -3596,10 +3594,7 @@ body {
   }
   .content__item-title {
     font-size: 18px;
-    width: 260px;
-  }
-  .content__item-text {
-    width: 260px;
+    text-align: center;
   }
   .handing__title {
     font-size: 18px;
@@ -3672,6 +3667,12 @@ body {
   }
 }
 
+@media (max-width: 370px) {
+  .extraction__text::before {
+    display: none;
+  }
+}
+
 @media (max-width: 360px) {
   .technology__about {
     padding: 30px;
@@ -3703,15 +3704,6 @@ body {
   }
   .cleaning__item {
     width: 300px;
-  }
-  .content__list {
-    text-align: center;
-    padding: 0;
-    list-style: none;
-  }
-  .repair__list {
-    list-style: none;
-    padding: 0;
   }
   .repair__list-item {
     padding: 5px;

@@ -706,7 +706,6 @@
 
 @media (max-width: 700px) {
 
-
   .partners{
     background-size: cover;
   }
@@ -1098,6 +1097,7 @@
   .content__item-text {
     font-size: 14px;
     width: 303px;
+    margin: auto;
     padding-left: 0;
   }
 
@@ -1699,11 +1699,7 @@
 
   .content__item-title {
     font-size: 18px;
-    width: 260px;
-  }
-
-  .content__item-text {
-    width: 260px;
+    text-align: center;
   }
 
   .handing__title {
@@ -1802,6 +1798,14 @@
   }
 }
 
+@media(max-width:370px){
+  .extraction__text {
+    &::before {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 360px) {
 
   .technology__about{
@@ -1848,16 +1852,6 @@
     width: 300px;
   }
 
-  .content__list {
-    text-align: center;
-    padding: 0;
-    list-style: none;
-  }
-
-  .repair__list {
-    list-style: none;
-    padding: 0;
-  }
 
   .repair__list-item {
     padding: 5px;
